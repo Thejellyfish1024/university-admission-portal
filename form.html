@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Info</title>
+    <style>
+        .southeast {
+            display: flex;
+            transform: translate(20%);
+        }
+
+        * {
+            margin: 0;
+        }
+
+        h1 {
+            background-color: rgb(232, 142, 7);
+            color: rgb(94, 7, 232);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .mainform {
+            text-align: center;
+            background-color: rgb(11, 172, 172);
+            width: 50%;
+            padding: 10px;
+            margin: 0px;
+            transform: translate(48%);
+
+        }
+
+        .maindiv {
+            text-align: center;
+            background-color: darkslategray;
+            padding: 15px;
+        }
+
+        h2 {
+            background-color: chartreuse;
+            width: 60%;
+            transform: translate(34%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Southeast University Admission portal</h1>
+    <div class="maindiv">
+        <div class="mainform">
+            <form action="form.html">
+
+                <input style="height: 30px;" type="text" placeholder="Enter your name"><br><br>
+                <input type="date" name="date" id="birthdate"><b>Date of birth</b><br><br>
+                <select name="gender" id="gender">
+                    <option value="default">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br><br>
+                <b>Which program are you interested in?</b><br>
+
+                <label for="programcse">
+                    <input type="radio" name="program" id="programcse">CSE
+                </label>
+                <label for="programEEE">
+                    <input type="radio" name="program" id="programEEE">EEE
+                </label>
+                <label for="programSWE">
+                    <input type="radio" name="program" id="programSWE">SWE
+                </label><br>
+                <b>Which semester you are interested to enroll?</b><br>
+                <label for="semesterfall">
+                    <input type="radio" name="semester" id="semesterfall">Fall
+                </label>
+                <label for="semestersummer">
+                    <input type="radio" name="semester" id="semestersummer">Summer
+                </label>
+                <label for="semesterwinter">
+                    <input type="radio" name="semester" id="semesterwinter">Winter
+                </label><br><br>
+                <a href="https://seu.edu.bd/admission.php?id=scholarship_waiver">Read terms and conditions</a><br>
+                <input type="checkbox" name="rules" id="termsandrules"><b>Agree to terms and conditions</b><br><br>
+                <textarea name="explain" id="explain" cols="30" rows="10"
+                    placeholder="Explain why are you interested to enroll in this particular program?"></textarea>
+
+            </form>
+        </div><br>
+        <div>
+            <h2>Learn more about Southeast University</h2><br>
+            <span class="southeast"> <iframe width="500" height="350" src="https://seu.edu.bd/"
+                    frameborder="0"></iframe>
+
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/UcDfnkyWcJo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe><br><br></span>
+        </div>
+    </div>
+</body>
+
+</html>
